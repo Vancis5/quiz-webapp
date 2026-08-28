@@ -1,0 +1,61 @@
+const themes = {
+  purple: {
+    bg: 'from-purple-900 to-purple-950',
+    accent: 'bg-purple-600',
+    accentHover: 'hover:bg-purple-500',
+    ring: 'ring-purple-400',
+    text: 'text-purple-300',
+    button: 'bg-purple-600 hover:bg-purple-500',
+    progressBar: 'bg-purple-500',
+    optionBg: 'bg-white/10 hover:bg-white/20',
+    optionBorder: 'border-white/20',
+  },
+  blue: {
+    bg: 'from-blue-900 to-blue-950',
+    accent: 'bg-blue-600',
+    accentHover: 'hover:bg-blue-500',
+    ring: 'ring-blue-400',
+    text: 'text-blue-300',
+    button: 'bg-blue-600 hover:bg-blue-500',
+    progressBar: 'bg-blue-500',
+    optionBg: 'bg-white/10 hover:bg-white/20',
+    optionBorder: 'border-white/20',
+  },
+  green: {
+    bg: 'from-emerald-900 to-emerald-950',
+    accent: 'bg-emerald-600',
+    accentHover: 'hover:bg-emerald-500',
+    ring: 'ring-emerald-400',
+    text: 'text-emerald-300',
+    button: 'bg-emerald-600 hover:bg-emerald-500',
+    progressBar: 'bg-emerald-500',
+    optionBg: 'bg-white/10 hover:bg-white/20',
+    optionBorder: 'border-white/20',
+  },
+  orange: {
+    bg: 'from-orange-900 to-orange-950',
+    accent: 'bg-orange-600',
+    accentHover: 'hover:bg-orange-500',
+    ring: 'ring-orange-400',
+    text: 'text-orange-300',
+    button: 'bg-orange-600 hover:bg-orange-500',
+    progressBar: 'bg-orange-500',
+    optionBg: 'bg-white/10 hover:bg-white/20',
+    optionBorder: 'border-white/20',
+  },
+  pink: {
+    bg: 'from-pink-900 to-pink-950',
+    accent: 'bg-pink-600',
+    accentHover: 'hover:bg-pink-500',
+    ring: 'ring-pink-400',
+    text: 'text-pink-300',
+    button: 'bg-pink-600 hover:bg-pink-500',
+    progressBar: 'bg-pink-500',
+    optionBg: 'bg-white/10 hover:bg-white/20',
+    optionBorder: 'border-white/20',
+  },
+}
+
+export function getTheme(name) {
+  return themes[name] || themes.purple
+}
