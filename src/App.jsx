@@ -68,7 +68,7 @@ export default function App() {
       </button>
 
       {/* Edge-to-edge centered viewport */}
-      <main className="flex-1 flex flex-col items-center justify-center w-full px-6 py-12 my-auto">
+      <main className="flex-1 flex flex-col items-center justify-center w-full px-4 sm:px-6 py-8 sm:py-12 my-auto">
         <AnimatePresence mode="wait">
           {session.phase === 'start' && (
             <StartScreen

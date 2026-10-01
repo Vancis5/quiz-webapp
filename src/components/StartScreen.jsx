@@ -10,10 +10,10 @@ export default function StartScreen({ quiz, theme, onStart }) {
       transition={{ duration: 0.25 }}
       className="max-w-2xl w-full text-center flex flex-col items-center will-change-[transform,opacity]"
     >
-      <h1 className="text-5xl md:text-7xl font-black text-white tracking-tight mb-4 leading-none">
+      <h1 className="text-4xl sm:text-5xl md:text-7xl font-black text-white tracking-tight mb-4 leading-none">
         {quiz.title}
       </h1>
-      <p className="text-lg md:text-xl text-white/70 max-w-lg mb-3 leading-relaxed">
+      <p className="text-base md:text-xl text-white/70 max-w-lg mb-3 leading-relaxed">
         {quiz.description}
       </p>
       <p className="text-xs font-mono text-white/40 mb-10 tracking-widest uppercase">

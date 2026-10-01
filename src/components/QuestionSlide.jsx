@@ -69,7 +69,7 @@ export default function QuestionSlide({
       transition={{ duration: 0.25 }}
       className="max-w-2xl w-full flex flex-col items-center will-change-[transform,opacity]"
     >
-      <h2 className="text-2xl md:text-4xl font-bold text-white text-center mb-8 leading-snug">
+      <h2 className="text-xl sm:text-2xl md:text-4xl font-bold text-white text-center mb-5 sm:mb-8 leading-snug">
         {question.question}
       </h2>
 
@@ -77,11 +77,11 @@ export default function QuestionSlide({
         <img
           src={question.image}
           alt=""
-          className="max-h-48 rounded-xl mb-6 object-contain"
+          className="max-h-40 sm:max-h-48 rounded-xl mb-5 sm:mb-6 object-contain"
         />
       )}
 
-      <div className="w-full space-y-3">
+      <div className="w-full space-y-2 sm:space-y-3">
         {question.options.map((optionText, index) => {
           const state = getOptionStatus(index)
           const isCorrect = state === 'selected-correct' || state === 'revealed-correct'
@@ -95,16 +95,16 @@ export default function QuestionSlide({
               onClick={() => onSelectOption(index)}
               disabled={isAnswered}
               className={`
-                w-full flex items-center gap-4 p-4 md:p-5 rounded-2xl border
+                w-full flex items-center gap-3 sm:gap-4 p-3.5 sm:p-5 rounded-2xl border
                 transition-all duration-200 text-left outline-none will-change-transform
                 ${getOptionStyles(state)}
                 ${isAnswered && state === 'idle' ? 'opacity-40 cursor-not-allowed' : 'cursor-pointer'}
               `}
             >
-              <span className={`w-9 h-9 rounded-xl flex items-center justify-center text-sm shrink-0 transition-colors will-change-[color,background-color] ${getBadgeStyles(state)}`}>
+              <span className={`w-8 h-8 sm:w-9 sm:h-9 rounded-xl flex items-center justify-center text-sm shrink-0 transition-colors will-change-[color,background-color] ${getBadgeStyles(state)}`}>
                 {isCorrect ? <Check className="w-4 h-4 stroke-[3]" /> : isWrong ? <X className="w-4 h-4 stroke-[3]" /> : OPTION_LABELS[index]}
               </span>
-              <span className="text-base md:text-lg font-medium flex-1">
+              <span className="text-sm sm:text-base md:text-lg font-medium flex-1">
                 {optionText}
               </span>
             </motion.button>

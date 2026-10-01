@@ -24,15 +24,15 @@ export default function ResultsScreen({ score, total, performance, theme, onRest
       transition={{ duration: 0.25 }}
       className="max-w-md w-full text-center flex flex-col items-center will-change-[transform,opacity]"
     >
-      <h1 className="text-4xl md:text-6xl font-black text-white mb-2 tracking-tight">
+      <h1 className="text-3xl sm:text-4xl md:text-6xl font-black text-white mb-2 tracking-tight">
         {performance?.label || 'Quiz Complete'}
       </h1>
-      <p className="text-white/60 text-base md:text-lg mb-8">
+      <p className="text-white/60 text-sm sm:text-base md:text-lg mb-6 sm:mb-8">
         {performance?.sublabel || `You scored ${score} out of ${total}`}
       </p>
 
       {/* Large Minimalist Score Display */}
-      <div className="relative w-44 h-44 mb-8 flex flex-col items-center justify-center">
+      <div className="relative w-36 h-36 sm:w-44 sm:h-44 mb-6 sm:mb-8 flex flex-col items-center justify-center">
         <svg className="w-full h-full -rotate-90 absolute inset-0" viewBox="0 0 120 120">
           <circle
             cx="60"
