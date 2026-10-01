@@ -1,60 +1,37 @@
 {
-  "title": "Cell Biology Basics",
-  "description": "Quick warmup before we dive into today's lesson! How well do you know your cells?",
+  "title": "Global Demography",
+  "description": "Explore key concepts in demography, population studies, and root word meanings.",
   "theme": "purple",
   "questions": [
     {
-      "question": "What is the powerhouse of the cell?",
-      "options": ["Nucleus", "Mitochondria", "Ribosome", "Golgi Apparatus"],
+      "question": "What is demo in demography?",
+      "options": ["Demonstration", "Democracy", "The people", "Migration"],
+      "correctIndex": 2,
+      "explanation": "'Demo' comes from the Greek word 'demos', which means the people."
+    },
+    {
+      "question": "What does demography mainly study?",
+      "options": ["Weather patterns", "Population", "Animals", "Plants"],
       "correctIndex": 1,
-      "explanation": "Mitochondria generate most of the cell's ATP through oxidative phosphorylation — that's energy currency!"
+      "explanation": "Demography is the statistical study of human populations, including births, deaths, and migrations."
     },
     {
-      "question": "Which organelle contains the cell's genetic material?",
-      "options": ["Endoplasmic Reticulum", "Lysosome", "Nucleus", "Cell Membrane"],
-      "correctIndex": 2,
-      "explanation": "The nucleus houses DNA and controls gene expression. Think of it as the cell's brain."
-    },
-    {
-      "question": "What structure gives plant cells their rigid shape?",
-      "options": ["Cell Membrane", "Cytoplasm", "Cell Wall", "Vacuole"],
-      "correctIndex": 2,
-      "explanation": "The cell wall (made of cellulose) provides structural support — that's why plants can stand upright without bones!"
-    },
-    {
-      "question": "Which organelle is responsible for protein synthesis?",
-      "options": ["Ribosome", "Mitochondria", "Lysosome", "Peroxisome"],
+      "question": "Which of the following is studied in demography?",
+      "options": ["Population size", "Ocean waves", "Soil types", "Rock formations"],
       "correctIndex": 0,
-      "explanation": "Ribosomes read mRNA and assemble amino acids into proteins. They're the cell's construction workers."
+      "explanation": "Demographers examine population size, distribution, density, and structure over time."
     },
     {
-      "question": "What is the function of the cell membrane?",
-      "options": [
-        "Produce energy",
-        "Store genetic information",
-        "Control what enters and exits the cell",
-        "Break down waste"
-      ],
-      "correctIndex": 2,
-      "explanation": "The cell membrane is selectively permeable — it's the bouncer at the club, deciding who gets in and out."
+      "question": "What is graphy in demography?",
+      "options": ["Measurements", "Geology", "Graphics", "Migration"],
+      "correctIndex": 0,
+      "explanation": "'Graphy' comes from Greek roots meaning writing, recording, or measurement."
     },
     {
-      "question": "Which organelle breaks down cellular waste and debris?",
-      "options": ["Golgi Apparatus", "Lysosome", "Smooth ER", "Centriole"],
+      "question": "What do we call the study of people and populations around the world?",
+      "options": ["Biology", "Global Demography", "Geography", "History"],
       "correctIndex": 1,
-      "explanation": "Lysosomes contain digestive enzymes that break down waste. They're the cell's recycling center."
-    },
-    {
-      "question": "Where does photosynthesis take place?",
-      "options": ["Mitochondria", "Nucleus", "Chloroplast", "Vacuole"],
-      "correctIndex": 2,
-      "explanation": "Chloroplasts contain chlorophyll, which captures light energy and converts it to glucose. Only in plant cells!"
-    },
-    {
-      "question": "What is the jelly-like substance that fills the cell?",
-      "options": ["Plasma", "Cytoplasm", "Nucleoplasm", "Interstitial Fluid"],
-      "correctIndex": 1,
-      "explanation": "Cytoplasm is the gel-like fluid where organelles float and chemical reactions happen. It's basically the cell's internal ocean."
+      "explanation": "Global Demography examines population trends, patterns, and dynamics worldwide."
     }
   ]
 }

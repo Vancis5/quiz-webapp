@@ -9,30 +9,66 @@
 }
 
 html, body, #root {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
-  overflow: hidden;
 }
 
 body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #090a0f;
+  color: #f4f4f5;
+}
+
+/* Accessible focus visible outlines */
+:focus-visible {
+  outline: 2px solid #10b981;
+  outline-offset: 2px;
+}
+
+/* Precision lab grid background texture */
+.lab-grid-bg {
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.06) 0%, transparent 60%),
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 100% 100%, 32px 32px, 32px 32px;
+}
+
+/* Keycap tactile inset feel */
+.keycap-bevel {
+  box-shadow: 0 2px 0 0 rgba(255, 255, 255, 0.12), inset 0 1px 0 0 rgba(255, 255, 255, 0.08);
 }
 
 /* Custom scrollbar for explanation panel */
 .custom-scrollbar::-webkit-scrollbar {
-  width: 6px;
+  width: 5px;
 }
 .custom-scrollbar::-webkit-scrollbar-track {
   background: transparent;
 }
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.2);
-  border-radius: 3px;
+  border-radius: 4px;
 }
 
 /* Ensure confetti canvas doesn't block interaction */
 canvas.confetti-canvas {
   pointer-events: none;
+}
+
+@layer utilities {
+  .animate-shake {
+    will-change: transform;
+  }
+  .animate-pulse-glow {
+    will-change: box-shadow;
+  }
+  .animate-score-pop {
+    will-change: transform;
+  }
+  .animate-slide-up {
+    will-change: transform, opacity;
+  }
 }

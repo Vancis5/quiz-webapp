@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-01T11:58:00Z",
+  "title": "Design System: Quiz Webapp - Specimen Laboratory Deck",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Signal Emerald",
+        "canonical": "oklch(69% 0.17 160)",
+        "tonalRamp": ["#022c22", "#064e3b", "#065f46", "#047857", "#059669", "#10b981", "#34d399", "#6ee7b7"]
+      },
+      "chassis": {
+        "role": "neutral",
+        "displayName": "Deep Obsidian",
+        "canonical": "oklch(15% 0.01 260)",
+        "tonalRamp": ["#030712", "#090a0f", "#111827", "#1f2937", "#374151", "#4b5563", "#6b7280", "#9ca3af"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero and section titles." },
+      "headline": { "displayName": "Headline", "purpose": "Question prompts." }
+    },
+    "shadows": [
+      { "name": "keycap-bevel", "value": "0 2px 0 0 rgba(255, 255, 255, 0.12), inset 0 1px 0 0 rgba(255, 255, 255, 0.08)", "purpose": "Tactile keycap lower bevel." }
+    ],
+    "motion": [
+      { "name": "spring-snappy", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Tactile option activation." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Option Keycap",
+      "kind": "button",
+      "refersTo": "keycap-option",
+      "description": "Tactile question answer choice button with keyboard shortcut hint.",
+      "html": "<button class=\"ds-option-keycap\"><span class=\"ds-keycap-badge\">A</span><span class=\"ds-option-text\">Mitochondria</span></button>",
+      "css": ".ds-option-keycap { display: flex; align-items: center; gap: 14px; width: 100%; padding: 16px 20px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; color: #f4f4f5; font-family: sans-serif; cursor: pointer; transition: all 0.15s ease; } .ds-option-keycap:hover { background: rgba(255, 255, 255, 0.06); border-color: rgba(255, 255, 255, 0.25); } .ds-keycap-badge { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 8px; background: rgba(39, 39, 42, 0.9); border: 1px solid rgba(255, 255, 255, 0.15); font-family: monospace; font-size: 13px; font-weight: 700; color: #d4d4d8; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Tactical Specimen Deck",
+    "overview": "A high-precision, distraction-free study instrument designed to reject AI slop, playful toy gamification, and generic gradient cards. The interface treats assessment as a calibrated laboratory interaction: mechanical keycap option buttons, tactile feedback, segmented progress rails, and razor-sharp typographic hierarchy.",
+    "keyCharacteristics": [
+      "Deep obsidian chassis with hairline measurement grid boundaries.",
+      "Physical keycap affordances with keyboard-first shortcut integration.",
+      "Instant, deterministic feedback without disruptive layout shifts.",
+      "High contrast WCAG AA compliant palette across all states."
+    ],
+    "rules": [
+      { "name": "The Rarity of Glow Rule", "body": "Saturated glowing states appear strictly upon user interaction and definitive outcome states. Neutral surfaces remain subdued and matte at rest.", "section": "colors" },
+      { "name": "The Tabular Milestone Rule", "body": "All question numbers, milestones, timer counts, and score readouts use tabular numbers to prevent visual jitter during transitions.", "section": "typography" },
+      { "name": "The Mechanical Keycap Rule", "body": "Interactive buttons possess a 2px physical lower bevel that depresses on :active, communicating instant tactile mechanical actuation.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do support keyboard shortcuts (1-4, A-D, Space, Enter, M, R) for all primary actions.",
+      "Do maintain a minimum 4.5:1 contrast ratio across all explanatory and option typography.",
+      "Do use vector SVG icons with uniform 2px stroke weights."
+    ],
+    "donts": [
+      "Don't use generic stock emojis (🎯, 🔥, 💪) as interface ornaments.",
+      "Don't lock viewports with h-screen overflow-hidden that clips content on mobile keyboards.",
+      "Don't rely on color alone to differentiate correct and incorrect answers."
+    ]
+  }
+}
